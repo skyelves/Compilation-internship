@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "----------------phase 1:flex"
+flex 1.lex
+echo "----------------phase 2:bison"
+bison 1.y
+echo "----------------phase 3:gcc"
+gcc 1.tab.c -ly -ll -o eeyore
+
+
